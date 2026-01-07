@@ -1,0 +1,64 @@
+\documentclass[uplatex, dvipdfmx, twocolumn, a4j, 9pt]{jsarticle}
+
+\usepackage[margin=0.72in, bmargin=1.4in, tmargin=1.3in]{geometry} 
+\usepackage{authblk} 
+\usepackage[linesnumbered, ruled, vlined, noresetcount]{algorithm2e} 
+\DontPrintSemicolon 
+
+\usepackage{color} 
+\usepackage{svg}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{stfloats}
+
+\renewcommand{\headfont}{\gtfamily\bfseries}
+\renewcommand{\abstractname}{Abstract}
+
+\title{Title}
+
+\date{} 
+
+\author{Name\thanks{Thanks to ...}} 
+
+\affil{ 
+  Department, 
+  Institution, 
+  City, Country \\
+  \
+}
+
+\setlength{\columnsep}{0.47in} 
+
+\begin{document} 
+
+  \maketitle 
+
+  \begin{abstract}
+    Abstract text
+  \end{abstract}
+
+  \section{Section 1} 
+  
+  \section{Section 2}
+  
+    \subsection{Sub section}
+      Text\cite{Template}.
+    
+      \begin{table*}[h]
+        \centering
+        \caption{Table caption}
+        \label{tab}
+        \begin{tabular}{ll} 
+          \toprule
+          Header 1 & Header 2 \\
+          \midrule
+          Data 1 & Data 2 \\
+          Data 3 & Data 4 \\
+          \bottomrule
+        \end{tabular}
+      \end{table*}
+
+  \bibliographystyle{abbrv}
+  \bibliography{references}
+
+\end{document}
